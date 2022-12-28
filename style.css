@@ -42,3 +42,21 @@ input[type="text"]:focus, input[type="password"]:focus {
     border-color: #3a8659;
 }
 
+input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3a8659;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #3a8659;
+}
