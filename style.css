@@ -1,3 +1,9 @@
+:root {
+    --txt-color: white;
+    --inp-border: #3498db;
+    --accent-color: #3a8659;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -17,7 +23,7 @@ form {
 }
 
 h1 {
-    color: white;
+    color: var(--txt-color);
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -28,18 +34,18 @@ input[type="text"], input[type="password"] {
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 2px solid #3498db;
+    border: 2px solid var(--inp-border);
     padding: 14px 10px;
     width: 200px;
     outline: none;
-    color: white;
+    color: var(--txt-color);
     border-radius: 24px;
     transition: 0.25s;
 }
 
 input[type="text"]:focus, input[type="password"]:focus {
     width: 270px;
-    border-color: #3a8659;
+    border-color: var(--accent-color);
 }
 
 input[type="submit"] {
@@ -48,7 +54,7 @@ input[type="submit"] {
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 2px solid #3a8659;
+    border: 2px solid var(--accent-color);
     padding: 14px 40px;
     outline: none;
     color: white;
@@ -58,5 +64,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background: #3a8659;
+    background: var(--accent-color);
 }
